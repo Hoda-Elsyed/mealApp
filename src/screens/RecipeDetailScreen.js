@@ -82,11 +82,9 @@ const RecipeDetailScreen = (props) => {
         <Image
           style={{
             height: hp(50),
-            width: wp(98),
-            borderRadius: 43,
+            width: wp(100),
             borderBottomLeftRadius: 30,
             borderBottomRightRadius: 30,
-            marginTop: 4,
           }}
           source={{ uri: item.strMealThumb }}
           sharedTransitionTag={item.strMeal}

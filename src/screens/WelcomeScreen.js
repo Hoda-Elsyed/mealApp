@@ -18,10 +18,10 @@ const WelcomeScreen = () => {
     ring1Padding.value = 0;
     ring2Padding.value = 0;
     setTimeout(
-      () => ((ring1Padding.value = withSpring(ring1Padding.value + hp(5))), 100)
+      () => ((ring1Padding.value = withSpring(ring1Padding.value + hp(5))), 1000)
     );
     setTimeout(
-      () => ((ring2Padding.value = withSpring(ring1Padding.value + hp(5))), 300)
+      () => ((ring2Padding.value = withSpring(ring1Padding.value + hp(5))), 3000)
     );
     setTimeout(() => (navigation.navigate("Home"), 1000000000));
   }, []);

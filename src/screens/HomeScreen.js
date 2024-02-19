@@ -64,15 +64,16 @@ const HomeScreen = () => {
         {/* Avatar and the bell icon */}
         <View className="flex-row justify-between items-center mx-4 mb-2">
           <Image
-            style={{ width: hp(7), height: hp(7) }}
+            style={{ width: hp(7), height: hp(7), borderRadius:30, borderWidth:2, borderColor:'gray' }}
             source={require("../../assets/images/avatar.png")}
+            
           />
           <BellIcon size={hp(4)} color="gray" />
         </View>
         {/* greetings and punchline */}
         <View className="mx-4 space-y-2 mb-2">
-          <Text style={{ fontSize: hp(1.7) }} className="text-neutral-600 ">
-            Hello, DODO!
+          <Text style={{ fontSize: hp(2) }} className="text-neutral-600 ">
+            Hello, Hoda!
           </Text>
           <View>
             <Text
@@ -85,7 +86,7 @@ const HomeScreen = () => {
               style={{ fontSize: hp(3.8) }}
               className="font-semibold text-neutral-600"
             >
-              stay at <Text className="text-amber-400">home</Text>
+              stay at <Text style={{color:'blue'}}>home</Text>
             </Text>
           </View>
         </View>
@@ -94,7 +95,7 @@ const HomeScreen = () => {
           <TextInput
             placeholder="Search any recipe"
             placeholderTextColor={"gray"}
-            style={{ fontSize: hp(1.7) }}
+            style={{ fontSize: hp(2) }}
             className="flex-1 text-base mb-1 pl-3 tracking-wider"
           />
           <View className="bg-white rounded-full p-3">
